@@ -1,0 +1,9 @@
+local platform = game.Workspace.DisappearingPlatform -- Referensi ke platform
+while true do
+    wait(3) -- Tunggu 3 detik
+    platform.Transparency = 1 -- Buat transparan
+    platform.CanCollide = false -- Hilangkan tabrakan
+    wait(3) -- Tunggu 3 detik lagi
+    platform.Transparency = 0 -- Kembalikan ke normal
+    platform.CanCollide = true -- Aktifkan tabrakan
+end
